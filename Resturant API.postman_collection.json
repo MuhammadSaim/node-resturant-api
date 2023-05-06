@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "c4164001-94e0-4307-831e-1def902ecae3",
+		"name": "Resturant API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6097401"
+	},
+	"item": [
+		{
+			"name": "Table List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/tables",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"tables"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Items List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/items",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Locations List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/locations",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employes List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/employes",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"employes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://127.0.0.1:5500/api",
+			"type": "string"
+		}
+	]
+}
