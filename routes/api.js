@@ -4,17 +4,22 @@ const { listTables } = require("../controllers/TableController.js");
 const { listItems } = require("../controllers/ItemController.js");
 const { listLocations } = require("../controllers/LocationController.js");
 const { listEmployes } = require("../controllers/EmployeeController.js");
+const { login } = require("../controllers/AuthController.js");
+const auth = require("../middlewares/auth");
+
+// auth routes
+router.post("/auth/login", login);
 
 // routes for tables
-router.get("/tables", listTables);
+router.get("/tables", auth, listTables);
 
 // routes for items
-router.get("/items", listItems);
+router.get("/items", auth, listItems);
 
 // routes for locations
-router.get("/locations", listLocations);
+router.get("/locations", auth, listLocations);
 
 // routes for employes
-router.get("/employes", listEmployes);
+router.get("/employes", auth, listEmployes);
 
 module.exports = router;

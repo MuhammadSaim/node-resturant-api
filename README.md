@@ -28,6 +28,12 @@ SQL_DATABASE=YOUR_DB_NAME
 SQL_SERVER=YOUR_DB_SERVER
 ```
 
+Add JWT authentication secret key for token generation in the <kbd>.env</kbd> file.
+
+```dotenv
+JWT_TOKEN_SECRET=YOUR_TOKEN_SECRET
+```
+
 Run the application now
 
 ```shell

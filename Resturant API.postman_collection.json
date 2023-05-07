@@ -10,7 +10,13 @@
 			"name": "Table List",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiQWRtaW4iLCJpYXQiOjE2ODM0NzM4MTgsImV4cCI6MTY4MzU2MDIxOH0.0--WUkyqtuNEzcVaPCVIWREx9ILk-y2igaeMjt93Drk",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "{{BASE_URL}}/tables",
 					"host": [
@@ -27,7 +33,13 @@
 			"name": "Items List",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "{{BASE_URL}}/items",
 					"host": [
@@ -44,7 +56,13 @@
 			"name": "Locations List",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "{{BASE_URL}}/locations",
 					"host": [
@@ -61,7 +79,13 @@
 			"name": "Employes List",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "{{BASE_URL}}/employes",
 					"host": [
@@ -69,6 +93,33 @@
 					],
 					"path": [
 						"employes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ADMIN\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/auth/login",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"auth",
+						"login"
 					]
 				}
 			},
