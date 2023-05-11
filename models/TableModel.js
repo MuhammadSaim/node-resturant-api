@@ -7,6 +7,7 @@ TableModel.init(
   {
     TableNo: DataTypes.STRING,
     Description: DataTypes.STRING,
+    table_status: DataTypes.STRING,
   },
   {
     sequelize,

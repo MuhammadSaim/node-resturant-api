@@ -13,7 +13,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiQWRtaW4iLCJpYXQiOjE2ODM0NzM4MTgsImV4cCI6MTY4MzU2MDIxOH0.0--WUkyqtuNEzcVaPCVIWREx9ILk-y2igaeMjt93Drk",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiQWRtaW4iLCJpYXQiOjE2ODM3OTA4ODEsImV4cCI6MTY4Mzg3NzI4MX0.c_HRLvzDPysAqPvxWvV5Tm6V3EnOx2e-dTTYCDe-z-Y",
 						"type": "text"
 					}
 				],
@@ -120,6 +120,40 @@
 					"path": [
 						"auth",
 						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Table Status",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiQWRtaW4iLCJpYXQiOjE2ODM3OTA4ODEsImV4cCI6MTY4Mzg3NzI4MX0.c_HRLvzDPysAqPvxWvV5Tm6V3EnOx2e-dTTYCDe-z-Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"Reserved\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/table/status/1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"table",
+						"status",
+						"1"
 					]
 				}
 			},
